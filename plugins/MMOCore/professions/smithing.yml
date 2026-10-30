@@ -1,0 +1,17 @@
+name: Smithing
+experience:
+  base: 20
+  per-level: 3
+exp-curve: '{level} * 150'
+exp-sources: {}
+repair-exp:
+  DIAMOND_SWORD: 1.923
+  GOLDEN_SWORD: 62.5
+  IRON_SWORD: 8
+  STONE_SWORD: 7.634
+  WOODEN_SWORD: 13.56
+  DIAMOND_PICKAXE: 1.923
+  GOLDEN_PICKAXE: 62.5
+  IRON_PICKAXE: 8
+  STONE_PICKAXE: 7.634
+  WOODEN_PICKAXE: 13.56

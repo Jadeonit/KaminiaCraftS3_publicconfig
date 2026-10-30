@@ -1,0 +1,21 @@
+﻿# Награды зачарования - линия мага.
+# Куда: plugins/AuraSkills/rewards/enchanting.yml (замена, сделай бэкап).
+# Дефолтные статы (wisdom/luck) сохранены, добавлена мана MMOCore.
+patterns:
+  - type: stat
+    stat: wisdom
+    value: 1
+    pattern:
+      interval: 1
+  - type: stat
+    stat: luck
+    value: 1
+    pattern:
+      interval: 2
+  - type: command
+    executor: console
+    command: 'mmocore admin mana give {player} 25'
+    pattern:
+      start: 3
+      interval: 3
+levels:

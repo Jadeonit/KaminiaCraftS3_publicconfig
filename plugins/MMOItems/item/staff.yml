@@ -1,0 +1,311 @@
+APPRENTICE_STAFF:
+  base:
+    material: STICK
+    name: '&7Посох ученика'
+    lore:
+    - '&7Первый посох молодого мага.'
+    - '&eБей в ближнем бою или кастуй заклинания.'
+    attack-damage: 3.0
+    attack-speed: 1.4
+    magic-damage: 10.0
+    max-mana: 15.0
+    tier: COMMON
+    upgrade:
+      reference: arcanist-line
+    crafting:
+      shaped:
+        '1':
+        - STICK AIR STICK
+        - AIR COAL AIR
+        - STICK AIR STICK
+    required-class:
+    - Маг
+    disable-crafting: true
+EMBER_STAFF:
+  base:
+    material: BLAZE_ROD
+    name: '&8Угольный посох'
+    lore:
+    - '&7Плюётся огненными болтами.'
+    - '&eПКМ — огненный болт (4 маны).'
+    attack-damage: 5.0
+    attack-speed: 1.4
+    magic-damage: 25.0
+    max-mana: 30.0
+    tier: UNCOMMON
+    upgrade:
+      reference: arcanist-line
+    ability:
+      ability1:
+        type: FIREBOLT
+        mode: RIGHT_CLICK
+        damage: 8.0
+        ignite: 3.0
+        mana: 4.0
+        cooldown: 5.0
+    crafting:
+      shaped:
+        '1':
+        - AIR BLAZE_ROD AIR
+        - AIR STICK AIR
+        - AIR STICK AIR
+    required-class:
+    - Маг
+    disable-crafting: true
+FROSTCALLER_STAFF:
+  base:
+    material: END_ROD
+    name: '&6&lПосох Морозного Зова'
+    lore:
+    - '&7Замораживает всё вокруг.'
+    - '&eПКМ — залп снежков, замораживающий врагов (10 маны).'
+    attack-damage: 7.0
+    attack-speed: 1.4
+    magic-damage: 50.0
+    max-mana: 50.0
+    tier: RARE
+    upgrade:
+      reference: arcanist-line
+    ability:
+      ability1:
+        type: FROST_SNOWBALLS
+        mode: RIGHT_CLICK
+        mana: 10.0
+        cooldown: 6.0
+    crafting:
+      shaped:
+        '1':
+        - AIR PACKED_ICE AIR
+        - AIR STAFF.EMBER_STAFF AIR
+        - AIR BLAZE_ROD AIR
+    required-class:
+    - Маг
+    disable-interaction: true
+    disable-crafting: true
+ARCHMAGE_STAFF:
+  base:
+    material: BREEZE_ROD
+    name: '&b&lПосох Архимага'
+    enchants:
+      unbreaking: 3
+    item-particles:
+      type: DOUBLE_RINGS
+      particle: REDSTONE
+      color:
+        red: 150
+        green: 50
+        blue: 255
+    lore:
+    - '&7Вершина магического искусства.'
+    - '&7Искажает само пространство.'
+    - '&eПКМ — чёрная дыра: втягивает врагов (20 маны).'
+    attack-damage: 10.0
+    attack-speed: 1.4
+    magic-damage: 90.0
+    max-mana: 80.0
+    tier: LEGENDARY
+    upgrade:
+      reference: arcanist-line
+    ability:
+      ability1:
+        type: BLACK_HOLE
+        mode: RIGHT_CLICK
+        duration: 3.0
+        radius: 3.5
+        mana: 20.0
+        cooldown: 25.0
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - ENDER_PEARL AMETHYST_SHARD ENDER_PEARL
+        - AIR STAFF.EMBER_STAFF AIR
+        - AIR BLAZE_ROD AIR
+    required-class:
+    - Маг
+    disable-crafting: true
+ASCENT_STAFF:
+  base:
+    material: BLAZE_ROD
+    name: '&b&lПосох Восхождения'
+    lore:
+    - '&7Ветер подхватывает своего хозяина.'
+    - '&eПКМ — подбросить себя вверх (10 маны).'
+    attack-damage: 4.0
+    attack-speed: 1.4
+    magic-damage: 20.0
+    max-mana: 20.0
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: LEAP
+        mode: RIGHT_CLICK
+        force: 1.2
+        mana: 10.0
+        cooldown: 8.0
+    crafting:
+      shaped:
+        '1':
+        - AIR FEATHER AIR
+        - AIR PHANTOM_MEMBRANE AIR
+        - AIR BLAZE_ROD AIR
+    required-class:
+    - Маг
+    disable-crafting: true
+STORMCALLER_STAFF:
+  base:
+    material: BREEZE_ROD
+    name: '&4&lПосох Зова Бури'
+    element:
+      thunder:
+        damage: 15.0
+    enchants:
+      unbreaking: 2
+    item-particles:
+      type: DOUBLE_RINGS
+      particle: REDSTONE
+      color:
+        red: 100
+        green: 220
+        blue: 255
+    lore:
+    - '&7Призывает молнии с небес.'
+    - '&eПКМ — луч молнии (12 маны).'
+    attack-damage: 8.0
+    attack-speed: 1.4
+    magic-damage: 65.0
+    max-mana: 60.0
+    tier: EPIC
+    upgrade:
+      reference: arcanist-line
+    ability:
+      ability1:
+        type: LIGHTNING_BEAM
+        mode: RIGHT_CLICK
+        damage: 22.0
+        mana: 12.0
+        cooldown: 10.0
+    crafting:
+      shaped:
+        '1':
+        - AIR GHAST_TEAR AIR
+        - AIR STAFF.EMBER_STAFF AIR
+        - AIR BLAZE_ROD AIR
+    required-class:
+    - Маг
+    disable-crafting: true
+NETHERBLOOM_STAFF:
+  base:
+    material: BLAZE_ROD
+    name: '&6&lЦветущий Посох'
+    lore:
+    - '&7Посох мага-целителя.'
+    - '&7Почва вспыхивает под ногами врагов.'
+    - '&eПКМ — огненный метеор (12 маны).'
+    - '&eShift+ПКМ — лечение себя и союзников (15 маны).'
+    attack-damage: 5.0
+    attack-speed: 1.4
+    magic-damage: 35.0
+    max-mana: 45.0
+    tier: RARE
+    upgrade:
+      reference: arcanist-line
+    ability:
+      ability1:
+        type: FIRE_METEOR
+        mode: RIGHT_CLICK
+        damage: 12.0
+        radius: 3.0
+        knockback: 1.0
+        mana: 12.0
+        cooldown: 10.0
+      ability2:
+        type: GRAND_HEAL
+        mode: SHIFT_RIGHT_CLICK
+        heal: 10.0
+        radius: 4.0
+        mana: 15.0
+        cooldown: 20.0
+    crafting:
+      shaped:
+        '1':
+        - AIR GHAST_TEAR AIR
+        - AIR STICK AIR
+        - AIR GOLD_INGOT AIR
+    required-class:
+    - Маг
+    disable-crafting: true
+VOIDCALLER_STAFF:
+  base:
+    material: END_ROD
+    name: '&4&lПосох Зова Пустоты'
+    lore:
+    - '&7Шепчет из темноты.'
+    - '&eПКМ — луч пустоты (10 маны).'
+    attack-damage: 7.0
+    attack-speed: 1.4
+    magic-damage: 60.0
+    max-mana: 55.0
+    tier: EPIC
+    upgrade:
+      reference: arcanist-line
+    element:
+      darkness:
+        damage: 15.0
+    ability:
+      ability1:
+        type: CURSED_BEAM
+        mode: RIGHT_CLICK
+        damage: 18.0
+        duration: 3.0
+        mana: 12.0
+        cooldown: 12.0
+    crafting:
+      shaped:
+        '1':
+        - AIR ECHO_SHARD AIR
+        - AIR STAFF.EMBER_STAFF AIR
+        - AIR OBSIDIAN AIR
+    required-class:
+    - Маг
+    disable-interaction: true
+    disable-crafting: true
+STAFF_OF_VERES:
+  base:
+    material: BREEZE_ROD
+    name: '&5&lПосох Вереса'
+    lore:
+    - '&7Посох главы магов.'
+    - '&eПКМ — арканный град в указанную точку (25 маны).'
+    - '&eУдары посохом пьют жизнь.'
+    attack-damage: 8.0
+    attack-speed: 1.4
+    magic-damage: 120.0
+    max-mana: 150.0
+    tier: MYTHICAL
+    element:
+      thunder:
+        damage: 20.0
+    ability:
+      ability1:
+        type: ARCANE_HAIL
+        mode: RIGHT_CLICK
+        damage: 10.0
+        duration: 4.0
+        radius: 4.0
+        mana: 25.0
+        cooldown: 18.0
+      ability2:
+        type: VAMPIRISM
+        mode: ON_HIT
+        cooldown: 8.0
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - END_CRYSTAL NETHER_STAR END_CRYSTAL
+        - AIR STAFF.ARCHMAGE_STAFF AIR
+        - BLAZE_ROD NETHERITE_INGOT BLAZE_ROD
+    required-class:
+    - Маг
+    disable-crafting: true

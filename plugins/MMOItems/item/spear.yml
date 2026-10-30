@@ -1,0 +1,58 @@
+TIDEFORK:
+  base:
+    material: TRIDENT
+    name: '&8Вилы Прилива'
+    element:
+      water:
+        damage: 8.0
+    lore:
+    - '&7Верный трезубец путника.'
+    - '&7Бей в ближнем бою или метни.'
+    - Лёгкое оружие путника.
+    attack-damage: 9.0
+    attack-speed: 1.4
+    tier: UNCOMMON
+    upgrade:
+      reference: ranger-line
+    crafting:
+      shaped:
+        '1':
+        - AIR PRISMARINE_SHARD AIR
+        - AIR STICK AIR
+        - AIR STICK AIR
+    required-class:
+    - Человек
+    enchants:
+      loyalty: 3
+STORM_TRIDENT:
+  base:
+    material: TRIDENT
+    name: '&4&lТрезубец Шторма'
+    enchants:
+      unbreaking: 2
+      loyalty: 3
+    lore:
+    - '&7В ближнем бою слабее мечей.'
+    - '&eПКМ — удар молнии (12 маны).'
+    attack-damage: 8.0
+    attack-speed: 1.4
+    magic-damage: 55.0
+    max-mana: 40.0
+    tier: EPIC
+    upgrade:
+      reference: arcanist-line
+    ability:
+      ability1:
+        type: LIGHTNING_BEAM
+        mode: RIGHT_CLICK
+        damage: 20.0
+        mana: 12.0
+        cooldown: 10.0
+    crafting:
+      shaped:
+        '1':
+        - AIR HEART_OF_THE_SEA AIR
+        - AIR SPEAR.TIDEFORK AIR
+        - AIR BLAZE_ROD AIR
+    required-class:
+    - Маг

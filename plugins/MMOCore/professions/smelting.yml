@@ -1,0 +1,6 @@
+name: Smelting
+experience:
+  base: 20
+  per-level: 3
+exp-curve: '{level} * 150'
+exp-sources: {}

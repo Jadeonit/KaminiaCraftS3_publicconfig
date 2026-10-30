@@ -1,0 +1,24 @@
+# Secrets and local data — never commit.
+*.db
+*.mv.db
+*.mv.db.temp
+*.log
+logs/
+cache/
+
+# Player data
+**/userdata/
+**/playerdata/
+**/sessions/
+
+# Worlds
+world/
+world_nether/
+world_the_end/
+world_*/**
+
+# Service files
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db

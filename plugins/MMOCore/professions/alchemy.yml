@@ -1,0 +1,32 @@
+name: Alchemy
+experience:
+  base: 20
+  per-level: 3
+exp-curve: '{level} * 150'
+exp-sources: {}
+alchemy-experience:
+  special:
+    splash: 40
+    lingering: 40
+    extend: 40
+    upgrade: 40
+  effects:
+    AWKWARD: 5
+    MUNDANE: 5
+    THICK: 5
+    NIGHT_VISION: 10
+    INVISIBILITY: 10
+    JUMP: 10
+    FIRE_RESISTANCE: 10
+    SPEED: 10
+    SLOWNESS: 10
+    WATER_BREATHING: 10
+    INSTANT_HEAL: 10
+    INSTANT_DAMAGE: 10
+    POISON: 10
+    REGEN: 10
+    STRENGTH: 10
+    WEAKNESS: 10
+    LUCK: 10
+    TURTLE_MASTER: 10
+    SLOW_FALLING: 10

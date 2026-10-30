@@ -1,0 +1,107 @@
+# Does nothing
+none:
+  public: true
+  name: None
+  parameters:
+    timer:
+      name: Timer
+      item: 0
+    delay:
+      name: Delay
+      item: 0
+    mana:
+      name: Mana
+      item: 0
+    stamina:
+      name: Stamina
+      item: 0
+    cooldown:
+      name: Cooldown
+      item: 0
+empty_skill:
+  public: true
+  name: Empty Skill
+  parameters:
+    timer:
+      name: Timer
+      item: 0
+    delay:
+      name: Delay
+      item: 0
+    mana:
+      name: Mana
+      item: 0
+    stamina:
+      name: Stamina
+      item: 0
+    cooldown:
+      name: Cooldown
+      item: 0
+
+# Some magical staff attack
+staff_attack:
+  public: true
+  mechanics:
+    raycast:
+      type: raytrace
+      hit_entity: staff_attack_hit_entity
+      tick: staff_attack_tick
+      size: 1
+  lore:
+  - Launch a blazing fireball
+  - dealing significant damage
+  - upon impact
+  - ''
+  - '&e{cooldown}s Cooldown'
+  - '&9Costs {mana} {mana_name}'
+  parameters:
+    mana:
+      player:
+        base: 6
+        per-level: 1.3
+        min: 0
+        max: 0
+      name: Mana
+      item: 0
+    cooldown:
+      player:
+        base: 7
+        per-level: 0.5
+        min: 0
+        max: 0
+      name: Cooldown
+      item: 0
+    timer:
+      name: Timer
+      item: 0
+    delay:
+      name: Delay
+      item: 0
+    stamina:
+      name: Stamina
+      item: 0
+  name: Staff Attack
+
+staff_attack_hit_entity:
+  conditions:
+    cantarget:
+      type: can_target
+  mechanics:
+    dealdamage:
+      type: damage
+      amount: 10
+      ignore_immunity: true
+    showparticles:
+      type: particle
+      particle: LAVA
+      amount: 32
+
+staff_attack_tick:
+  mechanics:
+    showparticles:
+      type: particle
+      particle: REDSTONE
+      amount: 4
+      x: 0.5
+      y: 0.5
+      z: 0.5

@@ -1,0 +1,2 @@
+# Delay before recipes are pushed to the book on player join (in ticks, 20 = 1 second).
+delay-ticks: 40

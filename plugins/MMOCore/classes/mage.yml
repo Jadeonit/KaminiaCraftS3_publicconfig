@@ -1,0 +1,106 @@
+display:
+  name: Маг
+  lore:
+  - Хрупкий, но смертоносный заклинатель.
+  - Мало здоровья, зато огромный запас маны
+  - и разрушительные заклинания.
+  - ''
+  - В королевстве остался единственный
+  - источник маны — и он у магов.
+  - ''
+  - Магическое оружие доступно только магам.
+  - ''
+  - '&8&lСНАРЯЖЕНИЕ КЛАССА'
+  - '&7  Оружие: &fпосохи, талисманы'
+  - '&7  Особое: &fтрезубец Шторма, источник маны'
+  - '&7  Броня: &fмантии и робы'
+  - ''
+  - '&8&lХАРАКТЕРИСТИКИ (без прокачки)'
+  - '&7  Здоровье: &f14 &8(хрупкий)'
+  - '&7  Мана: &f130'
+  - '&7  Реген маны: &f0.4&7/с'
+  - '&7  Атака: &fслабая, урон идёт от посохов'
+  - ''
+  - '&7Рост дают &fAuraSkills &7и &fSkillTree&7.'
+  attribute-lore:
+  - '&a+ &7Magic Damage'
+  - '&a+ &7Max Mana'
+  - '&a+ &7Mana Regen'
+  - '&c- &7Max Health'
+  - '&c- &7Attack Damage'
+  - ''
+  - '&8&lИнтеллект'
+  - '&7  Max Mana: &b130 &7(+&b7&7)'
+  - '&7  Mana Regen: &b0.3 &7(+&b0.01&7)'
+  - ''
+  - '&8&lТело'
+  - '&7  Max Health: &c14 &7(+&c0.2&7)'
+  item: BLAZE_ROD:0
+exp-curve: '{level} * 150'
+max-level: 1
+skill-slots:
+  1:
+    name: Skill Slot I
+    unlocked-by-default: true
+    lore: []
+  2:
+    name: Skill Slot II
+    unlocked-by-default: true
+    lore: []
+  3:
+    name: Skill Slot III
+    unlocked-by-default: true
+    lore: []
+  4:
+    name: Skill Slot IV
+    unlocked-by-default: true
+    lore: []
+skill-trees:
+- general
+- combat
+- mage-arcane-mage
+mana:
+  char: ♦
+  icon: '&b♦'
+  color:
+    full: BLUE
+    half: AQUA
+    empty: WHITE
+  name: Мана
+exp-table: class_exp_table
+cast-particle:
+  particle: REDSTONE
+  color:
+    red: 80
+    green: 150
+    blue: 255
+options:
+  off-combat-mana-regen: false
+  needs-permission: false
+skills:
+  FIREBALL:
+    level: 1
+    max-level: 30
+attributes:
+  mana-regeneration:
+    base: 0.4
+    per-level: 0.01
+  max-mana:
+    base: 130
+    per-level: 7
+  max-health:
+    base: 14
+    per-level: 0.2
+  movement-speed:
+    base: 0.12
+    per-level: 0
+  attack-damage:
+    base: 0
+    per-level: 0
+  attack-speed:
+    base: 4.0
+    per-level: 0
+  speed-malus-reduction:
+    base: 20
+    per-level: 1
+main-exp-sources: []

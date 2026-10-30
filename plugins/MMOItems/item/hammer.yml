@@ -1,0 +1,84 @@
+CRUSHER:
+  base:
+    material: MACE
+    name: '&8Дробитель'
+    lore:
+    - '&7Тяжёлая булава стражника.'
+    - '&7Бей в ближнем бою.'
+    - '&7Улучшается у кузнечной станции.'
+    attack-damage: 12.0
+    attack-speed: 1.1
+    weapon-damage: 6.0
+    tier: UNCOMMON
+    upgrade:
+      reference: knight-steel-line
+    crafting:
+      shaped:
+        '1':
+        - AIR IRON_BLOCK AIR
+        - AIR STICK AIR
+        - AIR STICK AIR
+    required-class:
+    - Рыцарь
+QUAKE_MAUL:
+  base:
+    material: MACE
+    name: '&4&lСейсмический Молот'
+    element:
+      earth:
+        damage: 12.0
+    enchants:
+      unbreaking: 2
+    lore:
+    - '&7Удар сотрясает землю.'
+    - '&7Попадания лечат владельца.'
+    attack-damage: 22.0
+    attack-speed: 1.1
+    weapon-damage: 14.0
+    critical-strike-chance: 10.0
+    tier: EPIC
+    ability:
+      ability1:
+        type: VAMPIRISM
+        mode: ON_HIT
+        cooldown: 8.0
+    upgrade:
+      reference: knight-steel-line
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - AIR NETHERITE_INGOT AIR
+        - AIR HAMMER.CRUSHER AIR
+        - AIR NETHERITE_INGOT AIR
+    required-class:
+    - Человек
+DOBRYNYA_MACE:
+  base:
+    material: MACE
+    name: '&5&lБулава Добрыни'
+    lore:
+    - '&7Палица главы людей.'
+    - '&eБей в ближнем бою, добивания лечат.'
+    attack-damage: 20.0
+    attack-speed: 1.0
+    weapon-damage: 8.0
+    critical-strike-chance: 8.0
+    tier: MYTHICAL
+    element:
+      earth:
+        damage: 10.0
+    ability:
+      ability1:
+        type: LIFE_ENDER
+        mode: ATTACK
+        cooldown: 10.0
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - HEART_OF_THE_SEA TOTEM_OF_UNDYING HEART_OF_THE_SEA
+        - AIR HAMMER.QUAKE_MAUL AIR
+        - NETHERITE_BLOCK NETHERITE_BLOCK NETHERITE_BLOCK
+    required-class:
+    - Человек

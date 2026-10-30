@@ -1,0 +1,38 @@
+ISTOK_MANY:
+  base:
+    material: AMETHYST_SHARD
+    name: '&dОсколок Истока'
+    lore:
+    - '&7Осколок источника маны.'
+    - '&eПКМ — восстановить 50 маны.'
+    - Магическое снаряжение.
+    restore-mana: 50.0
+    item-cooldown: 30.0
+    tier: UNCOMMON
+    crafting:
+      shaped:
+        '1':
+        - AIR AMETHYST_SHARD AIR
+        - AMETHYST_SHARD ECHO_SHARD AMETHYST_SHARD
+        - AIR AMETHYST_SHARD AIR
+    required-class:
+    - Маг
+SERDTSE_ISTOKA:
+  base:
+    material: ECHO_SHARD
+    name: '&d&lСердце Истока'
+    lore:
+    - '&7Сердце источника маны.'
+    - '&eПКМ — восстановить 150 маны.'
+    - Магическое снаряжение.
+    restore-mana: 150.0
+    item-cooldown: 60.0
+    tier: EPIC
+    crafting:
+      shaped:
+        '1':
+        - AIR NETHER_STAR AIR
+        - HEART_OF_THE_SEA CONSUMABLE.ISTOK_MANY HEART_OF_THE_SEA
+        - AIR ECHO_SHARD AIR
+    required-class:
+    - Маг

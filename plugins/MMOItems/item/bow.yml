@@ -1,0 +1,45 @@
+HUNTER_BOW:
+  base:
+    material: BOW
+    name: '&7Охотничий лук'
+    lore:
+    - '&7Простой лук следопыта.'
+    - '&7Стреляй как обычным луком.'
+    attack-damage: 6.0
+    tier: COMMON
+    upgrade:
+      reference: ranger-line
+    crafting:
+      shaped:
+        '1':
+        - STRING BONE AIR
+        - STRING AIR BONE
+        - STRING BONE AIR
+    required-class:
+    - Человек
+EAGLE_EYE_BOW:
+  base:
+    material: BOW
+    name: '&6&lОрлиный Взор'
+    element:
+      wind:
+        damage: 10.0
+    lore:
+    - '&7Бьёт далеко и точно.'
+    - '&7Стреляй как обычным луком.'
+    attack-damage: 12.0
+    critical-strike-chance: 15.0
+    tier: RARE
+    upgrade:
+      reference: ranger-line
+    enchants:
+      punch: 2.0
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - AIR FEATHER AIR
+        - AIR BOW.HUNTER_BOW AIR
+        - AIR STRING AIR
+    required-class:
+    - Человек

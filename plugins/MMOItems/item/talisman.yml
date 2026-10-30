@@ -1,0 +1,51 @@
+MANAWEAVE_TALISMAN:
+  base:
+    material: AMETHYST_SHARD
+    disable-interaction: true
+    name: '&8Талисман Манаплетения'
+    lore:
+    - '&7Держи во второй руке:'
+    - '&7больше маны и урона заклинаний.'
+    max-mana: 35.0
+    magic-damage: 12.0
+    tier: UNCOMMON
+    upgrade:
+      reference: arcanist-line
+    crafting:
+      shaped:
+        '1':
+        - AIR ENDER_PEARL AIR
+        - AIR BOOK AIR
+        - AIR LAPIS_LAZULI AIR
+    required-class:
+    - Маг
+EMBER_CHARM:
+  base:
+    material: BLAZE_POWDER
+    disable-interaction: true
+    name: '&6&lУголёк-Очарование'
+    lore:
+    - '&7Тёплый уголёк с силой огня.'
+    - '&eПКМ — поджигает врагов вокруг (8 маны).'
+    max-mana: 50.0
+    magic-damage: 20.0
+    tier: RARE
+    upgrade:
+      reference: arcanist-line
+    crafting:
+      shaped:
+        '1':
+        - AIR BLAZE_POWDER AIR
+        - GOLD_INGOT TALISMAN.MANAWEAVE_TALISMAN GOLD_INGOT
+        - AIR REDSTONE AIR
+    required-class:
+    - Маг
+    ability:
+      ability1:
+        type: IGNITE
+        mode: RIGHT_CLICK
+        duration: 80.0
+        radius: 4.0
+        max-ignite: 200.0
+        mana: 8.0
+        cooldown: 8.0

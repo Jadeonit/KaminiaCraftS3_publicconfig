@@ -1,0 +1,364 @@
+SQUIRE_BLADE:
+  base:
+    material: IRON_SWORD
+    name: '&7Клинок оруженосца'
+    lore:
+    - '&7Простой, но честный меч.'
+    - Рыцарское снаряжение.
+    - '&eБей в ближнем бою.'
+    attack-damage: 6.0
+    attack-speed: 1.6
+    tier: COMMON
+    upgrade:
+      reference: knight-steel-line
+    crafting:
+      shaped:
+        '1':
+        - AIR AIR IRON_INGOT
+        - AIR IRON_INGOT AIR
+        - STICK AIR AIR
+    required-class:
+    - Рыцарь
+KNIGHT_BLADE:
+  base:
+    material: IRON_SWORD
+    name: '&8Рыцарский клинок'
+    lore:
+    - '&7Закалён в боях.'
+    - '&7Пьёт жизнь врагов.'
+    - '&eУдар — вампиризм (перезарядка 8 сек).'
+    attack-damage: 10.0
+    attack-speed: 1.6
+    weapon-damage: 4.0
+    tier: UNCOMMON
+    upgrade:
+      reference: knight-steel-line
+    ability:
+      ability1:
+        type: VAMPIRISM
+        mode: ATTACK
+        cooldown: 8.0
+    crafting:
+      shaped:
+        '1':
+        - AIR IRON_INGOT AIR
+        - IRON_INGOT SWORD.SQUIRE_BLADE IRON_INGOT
+        - AIR STICK AIR
+    required-class:
+    - Рыцарь
+RUNEBRAND_GREATSWORD:
+  base:
+    material: DIAMOND_SWORD
+    name: '&6&lРунический двуручник'
+    lore:
+    - '&7Тяжёлый клинок с рунами.'
+    - '&7Требует двух рук.'
+    - '&eБей в ближнем бою, держи двумя руками.'
+    attack-damage: 16.0
+    attack-speed: 1.3
+    weapon-damage: 10.0
+    critical-strike-chance: 10.0
+    tier: RARE
+    upgrade:
+      reference: knight-steel-line
+    two-handed: true
+    movement-speed: -0.01
+    crafting:
+      shaped:
+        '1':
+        - AIR DIAMOND AIR
+        - LAPIS_LAZULI SWORD.KNIGHT_BLADE LAPIS_LAZULI
+        - AIR DIAMOND AIR
+    required-class:
+    - Рыцарь
+DAWNBREAKER:
+  base:
+    material: NETHERITE_SWORD
+    name: '&4&lРассветный клинок'
+    element:
+      lightness:
+        damage: 12.0
+    enchants:
+      unbreaking: 2
+    item-particles:
+      type: DOUBLE_RINGS
+      particle: REDSTONE
+      color:
+        red: 255
+        green: 200
+        blue: 60
+    lore:
+    - '&7Легенда рыцарского ордена.'
+    - '&7Свет жжёт нежить.'
+    - '&eУдар — вампиризм (перезарядка 6 сек).'
+    attack-damage: 24.0
+    attack-speed: 1.6
+    weapon-damage: 15.0
+    critical-strike-chance: 15.0
+    critical-strike-power: 25.0
+    tier: EPIC
+    upgrade:
+      reference: knight-steel-line
+    ability:
+      ability1:
+        type: VAMPIRISM
+        mode: ATTACK
+        cooldown: 6.0
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - AIR NETHERITE_INGOT AIR
+        - AIR SWORD.KNIGHT_BLADE AIR
+        - AIR NETHER_STAR AIR
+    required-class:
+    - Рыцарь
+MILITIA_SWORD:
+  base:
+    material: STONE_SWORD
+    name: '&7Меч ополченца'
+    lore:
+    - '&7Грубый, но доступный каждому.'
+    attack-damage: 5.0
+    attack-speed: 1.6
+    tier: COMMON
+    upgrade:
+      reference: ranger-line
+    crafting:
+      shaped:
+        '1':
+        - COBBLESTONE AIR AIR
+        - AIR COBBLESTONE AIR
+        - AIR AIR STICK
+TRAVELER_BLADE:
+  base:
+    material: IRON_SWORD
+    name: '&7Клинок путника'
+    lore:
+    - '&7Надёжный спутник в дороге.'
+    attack-damage: 7.0
+    attack-speed: 1.6
+    tier: COMMON
+    upgrade:
+      reference: ranger-line
+    crafting:
+      shaped:
+        '1':
+        - AIR IRON_INGOT AIR
+        - IRON_INGOT FLINT IRON_INGOT
+        - AIR STICK AIR
+SOULREAVER:
+  base:
+    material: NETHERITE_SWORD
+    name: '&4&lПожиратель Душ'
+    item-particles:
+      type: DOUBLE_RINGS
+      particle: REDSTONE
+      color:
+        red: 150
+        green: 0
+        blue: 0
+    lore:
+    - '&7С каждым улучшением пьёт души сильнее.'
+    - '&7Улучшается у кузнечной станции.'
+    - Рыцарское снаряжение.
+    attack-damage: 20.0
+    attack-speed: 1.6
+    weapon-damage: 12.0
+    critical-strike-chance: 10.0
+    tier: EPIC
+    ability:
+      ability1:
+        type: VAMPIRISM
+        mode: ON_HIT
+        cooldown: 6.0
+    upgrade:
+      reference: soulreaver-line
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - AIR ECHO_SHARD AIR
+        - AIR SWORD.KNIGHT_BLADE AIR
+        - AIR NETHERITE_INGOT AIR
+    required-class:
+    - Рыцарь
+WARDEN_BLADE:
+  base:
+    material: DIAMOND_SWORD
+    name: '&6&lКлинок Стража'
+    lore:
+    - '&7Карает врагов гневом стража.'
+    - '&eУдар — гнев стража (перезарядка 10 сек).'
+    attack-damage: 14.0
+    attack-speed: 1.6
+    weapon-damage: 8.0
+    tier: RARE
+    upgrade:
+      reference: knight-steel-line
+    ability:
+      ability1:
+        type: LIFE_ENDER
+        mode: ATTACK
+        cooldown: 10.0
+    crafting:
+      shaped:
+        '1':
+        - AIR IRON_BLOCK AIR
+        - IRON_INGOT IRON_INGOT IRON_INGOT
+        - AIR STICK AIR
+    required-class:
+    - Рыцарь
+DUSKBLADE:
+  base:
+    material: NETHERITE_SWORD
+    name: '&4&lСумеречный Клинок'
+    enchants:
+      unbreaking: 2
+    lore:
+    - '&7Режет саму тень.'
+    - '&eБей в ближнем бою, тьма жжёт.'
+    attack-damage: 21.0
+    attack-speed: 1.5
+    weapon-damage: 10.0
+    critical-strike-chance: 12.0
+    tier: EPIC
+    upgrade:
+      reference: knight-steel-line
+    element:
+      darkness:
+        damage: 18.0
+    crafting:
+      shaped:
+        '1':
+        - AIR ECHO_SHARD AIR
+        - AIR SWORD.WARDEN_BLADE AIR
+        - AIR NETHERITE_INGOT AIR
+    required-class:
+    - Рыцарь
+WINDLORD_BLADE:
+  base:
+    material: IRON_SWORD
+    name: '&6&lКлинок Повелителя Ветров'
+    lore:
+    - '&7ПКМ — рывок вперёд (8 маны).'
+    - Рыцарское снаряжение.
+    attack-damage: 14.0
+    attack-speed: 1.6
+    weapon-damage: 7.0
+    tier: RARE
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+        damage: 0.0
+        mana: 8.0
+        cooldown: 6.0
+        length: 0.2
+    upgrade:
+      reference: knight-steel-line
+    crafting:
+      shaped:
+        '1':
+        - AIR FEATHER AIR
+        - AIR SWORD.KNIGHT_BLADE AIR
+        - AIR STRING AIR
+    required-class:
+    - Рыцарь
+TRUE_WINDLORD_BLADE:
+  base:
+    material: DIAMOND_SWORD
+    name: '&4&lИстинный Клинок Ветров'
+    lore:
+    - '&7ПКМ — дальний рывок (5 маны).'
+    - '&7Ветер режет сильнее стали.'
+    attack-damage: 18.0
+    attack-speed: 1.6
+    weapon-damage: 10.0
+    tier: EPIC
+    element:
+      wind:
+        damage: 15.0
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+        damage: 0.0
+        mana: 5.0
+        cooldown: 4.0
+        length: 0.25
+    upgrade:
+      reference: knight-steel-line
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - NETHER_STAR ECHO_SHARD NETHER_STAR
+        - AIR SWORD.WINDLORD_BLADE AIR
+        - NETHERITE_INGOT NETHERITE_INGOT NETHERITE_INGOT
+    required-class:
+    - Рыцарь
+EDWIN_BLADE:
+  base:
+    material: NETHERITE_SWORD
+    name: '&5&lКлинок капитана Эдвина'
+    lore:
+    - '&7Клинок правой руки магистра.'
+    - '&eУдары пьют жизнь, добивания лечат.'
+    attack-damage: 28.0
+    attack-speed: 1.6
+    weapon-damage: 14.0
+    critical-strike-chance: 12.0
+    tier: MYTHICAL
+    ability:
+      ability1:
+        type: VAMPIRISM
+        mode: ON_HIT
+        cooldown: 5.0
+      ability2:
+        type: LIFE_ENDER
+        mode: ATTACK
+        cooldown: 12.0
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - TOTEM_OF_UNDYING NETHERITE_INGOT TOTEM_OF_UNDYING
+        - AIR SWORD.DAWNBREAKER AIR
+        - NETHERITE_INGOT NETHERITE_BLOCK NETHERITE_INGOT
+    required-class:
+    - Рыцарь
+RAYGAR_SWORD:
+  base:
+    material: NETHERITE_SWORD
+    name: '&5&lМеч магистра Райгара'
+    lore:
+    - '&7Меч главы рыцарей.'
+    - '&eПКМ — священный залп (12 ярости).'
+    - '&eСвет жжёт нежить.'
+    attack-damage: 32.0
+    attack-speed: 1.5
+    weapon-damage: 16.0
+    critical-strike-chance: 15.0
+    critical-strike-power: 25.0
+    tier: MYTHICAL
+    element:
+      lightness:
+        damage: 15.0
+    ability:
+      ability1:
+        type: HOLY_MISSILE
+        mode: RIGHT_CLICK
+        damage: 40.0
+        duration: 6.0
+        mana: 12.0
+        cooldown: 10.0
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - NETHER_STAR HEART_OF_THE_SEA NETHER_STAR
+        - AIR SWORD.EDWIN_BLADE AIR
+        - END_CRYSTAL NETHERITE_BLOCK END_CRYSTAL
+    required-class:
+    - Рыцарь

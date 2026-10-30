@@ -1,0 +1,581 @@
+TRAVELER_HOOD:
+  base:
+    material: CHAINMAIL_HELMET
+    name: '&7Капюшон путника'
+    armor: 2.0
+    max-health: 2.0
+    tier: COMMON
+    upgrade:
+      reference: ranger-line
+    crafting:
+      shaped:
+        '1':
+        - LEATHER LEATHER LEATHER
+        - LEATHER AIR LEATHER
+        - AIR STRING AIR
+    lore: []
+TRAVELER_TUNIC:
+  base:
+    material: CHAINMAIL_CHESTPLATE
+    name: '&7Туника путника'
+    armor: 3.0
+    max-health: 4.0
+    tier: COMMON
+    upgrade:
+      reference: ranger-line
+    crafting:
+      shaped:
+        '1':
+        - LEATHER AIR LEATHER
+        - LEATHER LEATHER LEATHER
+        - LEATHER STRING LEATHER
+    lore: []
+TRAVELER_PANTS:
+  base:
+    material: CHAINMAIL_LEGGINGS
+    name: '&7Штаны путника'
+    armor: 2.5
+    max-health: 3.0
+    tier: COMMON
+    upgrade:
+      reference: ranger-line
+    crafting:
+      shaped:
+        '1':
+        - LEATHER STRING LEATHER
+        - LEATHER AIR LEATHER
+        - LEATHER AIR LEATHER
+    lore: []
+TRAVELER_BOOTS:
+  base:
+    material: CHAINMAIL_BOOTS
+    name: '&7Сапоги путника'
+    armor: 1.5
+    max-health: 2.0
+    movement-speed: 0.01
+    tier: COMMON
+    upgrade:
+      reference: ranger-line
+    crafting:
+      shaped:
+        '1':
+        - AIR LEATHER AIR
+        - LEATHER AIR LEATHER
+        - LEATHER AIR LEATHER
+    lore: []
+KNIGHT_HELM:
+  base:
+    material: IRON_HELMET
+    name: '&7Рыцарский шлем'
+    armor: 3.0
+    armor-toughness: 1.0
+    max-health: 4.0
+    tier: COMMON
+    upgrade:
+      reference: bulwark-line
+    crafting:
+      shaped:
+        '1':
+        - AIR IRON_INGOT AIR
+        - IRON_INGOT AIR IRON_INGOT
+        - AIR IRON_BARS AIR
+    lore: []
+    required-class:
+    - Рыцарь
+KNIGHT_CHESTPLATE:
+  base:
+    material: IRON_CHESTPLATE
+    name: '&8Рыцарская кираса'
+    magic-damage-reduction: 2.0
+    armor: 5.0
+    armor-toughness: 2.0
+    max-health: 8.0
+    tier: UNCOMMON
+    upgrade:
+      reference: bulwark-line
+    crafting:
+      shaped:
+        '1':
+        - IRON_INGOT AIR IRON_INGOT
+        - IRON_INGOT IRON_INGOT IRON_INGOT
+        - AIR IRON_INGOT AIR
+    lore: []
+    required-class:
+    - Рыцарь
+KNIGHT_LEGGINGS:
+  base:
+    material: IRON_LEGGINGS
+    name: '&8Рыцарские поножи'
+    armor: 4.0
+    armor-toughness: 1.0
+    max-health: 6.0
+    tier: UNCOMMON
+    upgrade:
+      reference: bulwark-line
+    crafting:
+      shaped:
+        '1':
+        - IRON_INGOT AIR IRON_INGOT
+        - IRON_INGOT AIR IRON_INGOT
+        - IRON_INGOT AIR IRON_INGOT
+    lore: []
+    required-class:
+    - Рыцарь
+KNIGHT_BOOTS:
+  base:
+    material: IRON_BOOTS
+    name: '&7Рыцарские сапоги'
+    armor: 3.0
+    max-health: 4.0
+    movement-speed: -0.005
+    tier: COMMON
+    upgrade:
+      reference: bulwark-line
+    crafting:
+      shaped:
+        '1':
+        - AIR AIR AIR
+        - IRON_INGOT AIR IRON_INGOT
+        - IRON_INGOT AIR IRON_INGOT
+    lore: []
+    required-class:
+    - Рыцарь
+PALADIN_PLATE_CHESTPLATE:
+  base:
+    material: DIAMOND_CHESTPLATE
+    name: '&4&lЛатный доспех паладина'
+    magic-damage-reduction: 4.0
+    armor: 8.0
+    armor-toughness: 3.0
+    max-health: 14.0
+    tier: EPIC
+    upgrade:
+      reference: bulwark-line
+    movement-speed: -0.01
+    crafting:
+      shaped:
+        '1':
+        - DIAMOND DIAMOND DIAMOND
+        - DIAMOND AIR DIAMOND
+        - DIAMOND DIAMOND DIAMOND
+    lore: []
+    required-class:
+    - Рыцарь
+APPRENTICE_HOOD:
+  base:
+    material: LEATHER_HELMET
+    name: '&7Капюшон ученика'
+    dye-color: 120 120 120
+    hide-dye: true
+    armor: 1.0
+    max-mana: 20.0
+    tier: COMMON
+    upgrade:
+      reference: arcanist-line
+    crafting:
+      shaped:
+        '1':
+        - BLUE_WOOL BLUE_WOOL BLUE_WOOL
+        - BLUE_WOOL AIR BLUE_WOOL
+        - AIR LEATHER AIR
+    required-class:
+    - Маг
+EMBER_ROBE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '&8Угольная роба'
+    dye-color: 210 80 20
+    hide-dye: true
+    armor: 2.0
+    max-mana: 40.0
+    magic-damage: 10.0
+    tier: UNCOMMON
+    upgrade:
+      reference: arcanist-line
+    crafting:
+      shaped:
+        '1':
+        - BLAZE_POWDER ORANGE_WOOL BLAZE_POWDER
+        - ORANGE_WOOL ARMOR.APPRENTICE_HOOD ORANGE_WOOL
+        - ORANGE_WOOL ORANGE_WOOL ORANGE_WOOL
+    required-class:
+    - Маг
+EMBER_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: '&8Угольные штаны'
+    dye-color: 210 80 20
+    hide-dye: true
+    armor: 1.5
+    max-mana: 25.0
+    tier: UNCOMMON
+    upgrade:
+      reference: arcanist-line
+    crafting:
+      shaped:
+        '1':
+        - ORANGE_WOOL ORANGE_WOOL ORANGE_WOOL
+        - ORANGE_WOOL STRING ORANGE_WOOL
+        - ORANGE_WOOL AIR ORANGE_WOOL
+    required-class:
+    - Маг
+ARCHMAGE_ROBE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '&4&lРоба Архимага'
+    dye-color: 125 0 255
+    hide-dye: true
+    perm-effects:
+      FIRE_RESISTANCE: 1
+    armor: 3.0
+    max-mana: 80.0
+    magic-damage: 25.0
+    tier: EPIC
+    upgrade:
+      reference: arcanist-line
+    crafting:
+      shaped:
+        '1':
+        - STRING STRING STRING
+        - LEATHER AMETHYST_SHARD LEATHER
+        - LEATHER LEATHER LEATHER
+    required-class:
+    - Маг
+RANGER_HOOD:
+  base:
+    material: LEATHER_HELMET
+    name: '&8Капюшон следопыта'
+    dye-color: 60 120 40
+    hide-dye: true
+    lore:
+    - '&7Лёгкий и тихий.'
+    - Снаряжение путников.
+    armor: 1.5
+    max-health: 3.0
+    movement-speed: 0.01
+    tier: UNCOMMON
+    upgrade:
+      reference: ranger-line
+    crafting:
+      shaped:
+        '1':
+        - STRING STRING STRING
+        - LEATHER AIR LEATHER
+        - AIR AIR AIR
+    required-class:
+    - Человек
+RANGER_TUNIC:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '&8Куртка следопыта'
+    dye-color: 60 120 40
+    hide-dye: true
+    lore:
+    - '&7Не стесняет движений.'
+    - Снаряжение путников.
+    armor: 3.0
+    max-health: 6.0
+    movement-speed: 0.015
+    tier: UNCOMMON
+    upgrade:
+      reference: ranger-line
+    crafting:
+      shaped:
+        '1':
+        - LEATHER AIR LEATHER
+        - LEATHER LEATHER LEATHER
+        - LEATHER FEATHER LEATHER
+    required-class:
+    - Человек
+JUGGERNAUT_HELM:
+  base:
+    material: NETHERITE_HELMET
+    name: '&4&lШлем Джаггернаута'
+    magic-damage-reduction: 3.0
+    upgrade:
+      reference: bulwark-line
+    lore:
+    - '&7Стена, а не шлем.'
+    - Рыцарское снаряжение.
+    armor: 4.0
+    armor-toughness: 3.0
+    max-health: 10.0
+    tier: EPIC
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - NETHERITE_INGOT NETHERITE_INGOT NETHERITE_INGOT
+        - NETHERITE_INGOT AIR NETHERITE_INGOT
+        - AIR AIR AIR
+    required-class:
+    - Рыцарь
+JUGGERNAUT_CHEST:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: '&4&lПанцирь Джаггернаута'
+    magic-damage-reduction: 5.0
+    upgrade:
+      reference: bulwark-line
+    lore:
+    - '&7Держит любой удар.'
+    - Рыцарское снаряжение.
+    armor: 9.0
+    armor-toughness: 4.0
+    max-health: 16.0
+    movement-speed: -0.01
+    tier: EPIC
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - NETHERITE_INGOT AIR NETHERITE_INGOT
+        - NETHERITE_INGOT NETHERITE_INGOT NETHERITE_INGOT
+        - NETHERITE_INGOT NETHERITE_INGOT NETHERITE_INGOT
+    required-class:
+    - Рыцарь
+SPELLWEAVE_HOOD:
+  base:
+    material: LEATHER_HELMET
+    name: '&8Капюшон Ткача Заклинаний'
+    dye-color: 150 50 220
+    hide-dye: true
+    upgrade:
+      reference: arcanist-line
+    lore:
+    - '&7Ткань, пропитанная маной.'
+    - Магическое снаряжение.
+    armor: 1.5
+    max-mana: 30.0
+    magic-damage: 8.0
+    tier: UNCOMMON
+    crafting:
+      shaped:
+        '1':
+        - STRING STRING STRING
+        - STRING AMETHYST_SHARD STRING
+        - AIR AIR AIR
+    required-class:
+    - Маг
+SPELLWEAVE_ROBE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '&b&lРоба Ткача Заклинаний'
+    dye-color: 150 50 220
+    hide-dye: true
+    upgrade:
+      reference: arcanist-line
+    lore:
+    - '&7Усиливает заклинания.'
+    - Магическое снаряжение.
+    armor: 3.5
+    max-mana: 100.0
+    magic-damage: 30.0
+    tier: LEGENDARY
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - AMETHYST_SHARD AIR AMETHYST_SHARD
+        - LEATHER ARMOR.SPELLWEAVE_HOOD LEATHER
+        - LEATHER LEATHER LEATHER
+    required-class:
+    - Маг
+CRIMSON_AEGIS_CHEST:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: '&4&lБагровая Эгида'
+    lore:
+    - '&7Доспех, закалённый в пламени.'
+    - Рыцарское снаряжение.
+    armor: 8.0
+    armor-toughness: 3.0
+    max-health: 12.0
+    element:
+      fire:
+        defense:
+          base: 12.0
+          scale: 0.0
+          spread: 0.07
+          max-spread: 0.2
+    tier: EPIC
+    upgrade:
+      reference: bulwark-line
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - AIR BLAZE_ROD AIR
+        - AIR ARMOR.JUGGERNAUT_CHEST AIR
+        - AIR NETHERITE_INGOT AIR
+    required-class:
+    - Рыцарь
+FROSTWARD_PLATE:
+  base:
+    material: DIAMOND_CHESTPLATE
+    name: '&6&lМорозный Доспех'
+    lore:
+    - '&7Холод отводит клинки.'
+    - Рыцарское снаряжение.
+    armor: 7.0
+    armor-toughness: 2.0
+    max-health: 10.0
+    element:
+      ice:
+        defense:
+          base: 12.0
+          scale: 0.0
+          spread: 0.07
+          max-spread: 0.2
+    tier: RARE
+    upgrade:
+      reference: bulwark-line
+    crafting:
+      shaped:
+        '1':
+        - AIR PACKED_ICE AIR
+        - AIR ARMOR.KNIGHT_CHESTPLATE AIR
+        - AIR DIAMOND AIR
+    required-class:
+    - Рыцарь
+VOIDWEAVE_ROBE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '&4&lРоба Тьмы'
+    dye-color: 50 0 70
+    hide-dye: true
+    lore:
+    - '&7Ткань из самой тени.'
+    - Магическое снаряжение.
+    armor: 3.0
+    max-mana: 70.0
+    magic-damage: 22.0
+    element:
+      darkness:
+        defense:
+          base: 10.0
+          scale: 0.0
+          spread: 0.07
+          max-spread: 0.2
+    tier: EPIC
+    upgrade:
+      reference: arcanist-line
+    crafting:
+      shaped:
+        '1':
+        - AIR ECHO_SHARD AIR
+        - AIR ARMOR.EMBER_ROBE AIR
+        - AIR LEATHER AIR
+    required-class:
+    - Маг
+STORMHIDE_TUNIC:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '&6&lГрозовая Куртка'
+    dye-color: 180 170 90
+    hide-dye: true
+    lore:
+    - '&7Пахнет озоном и дорогой.'
+    - Снаряжение путников.
+    armor: 3.5
+    max-health: 8.0
+    movement-speed: 0.02
+    element:
+      lightness:
+        defense:
+          base: 8.0
+          scale: 0.0
+          spread: 0.07
+          max-spread: 0.2
+    tier: RARE
+    upgrade:
+      reference: ranger-line
+    crafting:
+      shaped:
+        '1':
+        - AIR FEATHER AIR
+        - AIR ARMOR.TRAVELER_TUNIC AIR
+        - AIR LEATHER AIR
+    required-class:
+    - Человек
+VERES_MANTLE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '&5&lМантия Вереса'
+    lore:
+    - '&7Мантия главы магов.'
+    - Магическое снаряжение.
+    armor: 4.0
+    max-mana: 150.0
+    magic-damage: 40.0
+    dye-color: 90 0 160
+    hide-dye: true
+    tier: MYTHICAL
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - END_CRYSTAL NETHER_STAR END_CRYSTAL
+        - AIR ARMOR.ARCHMAGE_ROBE AIR
+        - LEATHER NETHERITE_INGOT LEATHER
+    required-class:
+    - Маг
+EDWIN_PLATE:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: '&5&lЛатный доспех Эдвина'
+    lore:
+    - '&7Доспех правой руки магистра.'
+    - Рыцарское снаряжение.
+    armor: 10.0
+    armor-toughness: 4.0
+    max-health: 20.0
+    magic-damage-reduction: 5.0
+    tier: MYTHICAL
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - TOTEM_OF_UNDYING NETHERITE_BLOCK TOTEM_OF_UNDYING
+        - AIR ARMOR.PALADIN_PLATE_CHESTPLATE AIR
+        - NETHERITE_INGOT NETHERITE_INGOT NETHERITE_INGOT
+RAYGAR_PLATE:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: '&5&lЛатный доспех Райгара'
+    lore:
+    - '&7Доспех главы рыцарей.'
+    - Рыцарское снаряжение.
+    armor: 12.0
+    armor-toughness: 5.0
+    max-health: 24.0
+    magic-damage-reduction: 8.0
+    tier: MYTHICAL
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - NETHER_STAR HEART_OF_THE_SEA NETHER_STAR
+        - AIR ARMOR.EDWIN_PLATE AIR
+        - END_CRYSTAL NETHERITE_BLOCK END_CRYSTAL
+DOBRYNYA_ARMOR:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: '&5&lКольчуга Добрыни'
+    lore:
+    - '&7Кольчуга главы людей.'
+    - Снаряжение путников.
+    armor: 8.0
+    armor-toughness: 3.0
+    max-health: 20.0
+    movement-speed: 0.02
+    tier: MYTHICAL
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - HEART_OF_THE_SEA TOTEM_OF_UNDYING HEART_OF_THE_SEA
+        - AIR ARMOR.RANGER_TUNIC AIR
+        - NETHERITE_INGOT NETHERITE_INGOT NETHERITE_INGOT
+    required-class:
+    - Человек

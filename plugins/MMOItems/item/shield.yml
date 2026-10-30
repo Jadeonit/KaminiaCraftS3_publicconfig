@@ -1,0 +1,40 @@
+AEGIS_SHIELD:
+  base:
+    material: SHIELD
+    name: '&4&lЭгида'
+    magic-damage-reduction: 6.0
+    shield-pattern:
+      color: BLUE
+      '0':
+        pattern: STRIPE_MIDDLE
+        color: WHITE
+    lore:
+    - '&7Легендарный щит ордена.'
+    - '&7Держит удар.'
+    - '&eДержи во второй руке, блокируй ПКМ.'
+    - '&eПКМ — барьер: режет входящий урон тебе и союзникам рядом (5 сек, 20 маны).'
+    armor: 4.0
+    armor-toughness: 2.0
+    max-health: 10.0
+    block-rating: 15.0
+    tier: EPIC
+    upgrade:
+      reference: bulwark-line
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - IRON_INGOT IRON_INGOT IRON_INGOT
+        - IRON_INGOT SHIELD IRON_INGOT
+        - AIR IRON_INGOT AIR
+    required-class:
+    - Рыцарь
+    ability:
+      ability1:
+        type: MAGICAL_SHIELD
+        mode: RIGHT_CLICK
+        duration: 5.0
+        radius: 4.0
+        power: 50.0
+        mana: 20.0
+        cooldown: 25.0

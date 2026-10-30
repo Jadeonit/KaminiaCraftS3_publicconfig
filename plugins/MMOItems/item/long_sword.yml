@@ -1,0 +1,109 @@
+FOOTMAN_LONGSWORD:
+  base:
+    material: IRON_SWORD
+    name: '&7Пехотный длинный меч'
+    lore:
+    - '&7Медленный, но бьёт тяжело.'
+    - '&eБей в ближнем бою.'
+    attack-damage: 11.0
+    attack-speed: 1.2
+    weapon-damage: 5.0
+    tier: COMMON
+    upgrade:
+      reference: knight-steel-line
+    crafting:
+      shaped:
+        '1':
+        - AIR IRON_INGOT AIR
+        - AIR IRON_INGOT AIR
+        - AIR STICK AIR
+    required-class:
+    - Рыцарь
+EMBERBRAND_LONGSWORD:
+  base:
+    material: IRON_SWORD
+    name: '&6&lУгольное Клеймо'
+    lore:
+    - '&7Клинок, закалённый в углях.'
+    - '&eБей в ближнем бою, поджигает.'
+    attack-damage: 14.0
+    attack-speed: 1.2
+    weapon-damage: 7.0
+    tier: RARE
+    upgrade:
+      reference: knight-steel-line
+    element:
+      fire:
+        damage: 15.0
+    crafting:
+      shaped:
+        '1':
+        - AIR BLAZE_POWDER AIR
+        - AIR LONG_SWORD.FOOTMAN_LONGSWORD AIR
+        - AIR IRON_INGOT AIR
+    required-class:
+    - Рыцарь
+ZWEIHANDER:
+  base:
+    material: DIAMOND_SWORD
+    name: '&4&lЦвайхандер'
+    enchants:
+      unbreaking: 2
+    lore:
+    - '&7Огромный двуручный клинок.'
+    - '&eБей в ближнем бою, держи двумя руками.'
+    - '&eПКМ — вихревой размах по всем вокруг (12 маны).'
+    attack-damage: 22.0
+    attack-speed: 1.0
+    weapon-damage: 12.0
+    critical-strike-chance: 10.0
+    tier: EPIC
+    upgrade:
+      reference: knight-steel-line
+    two-handed: true
+    movement-speed: -0.01
+    crafting:
+      shaped:
+        '1':
+        - AIR DIAMOND_BLOCK AIR
+        - AIR LONG_SWORD.FOOTMAN_LONGSWORD AIR
+        - AIR STICK AIR
+    required-class:
+    - Рыцарь
+    ability:
+      ability1:
+        type: CIRCULAR_SLASH
+        mode: RIGHT_CLICK
+        damage: 16.0
+        radius: 3.5
+        knockback: 1.2
+        mana: 12.0
+        cooldown: 10.0
+FROSTBITE_LONGSWORD:
+  base:
+    material: DIAMOND_SWORD
+    name: '&4&lМорозный Укус'
+    enchants:
+      unbreaking: 2
+    lore:
+    - '&7Мороз пробирает до костей.'
+    - '&eБей в ближнем бою, замораживает.'
+    attack-damage: 24.0
+    attack-speed: 1.0
+    weapon-damage: 12.0
+    critical-strike-chance: 12.0
+    tier: EPIC
+    upgrade:
+      reference: knight-steel-line
+    two-handed: true
+    element:
+      ice:
+        damage: 20.0
+    crafting:
+      shaped:
+        '1':
+        - AIR PACKED_ICE AIR
+        - AIR LONG_SWORD.ZWEIHANDER AIR
+        - AIR DIAMOND AIR
+    required-class:
+    - Рыцарь

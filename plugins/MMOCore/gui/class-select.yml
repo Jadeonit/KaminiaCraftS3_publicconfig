@@ -1,0 +1,35 @@
+# Экран выбора класса (/class)
+# Куда: plugins/MMOCore/gui/class-select.yml (замена файла)
+# Показывает три наших класса. function должен совпадать с ID файлов
+# в plugins/MMOCore/classes/: mage.yml, knight.yml, human.yml
+name: 'Выбор класса'
+slots: 27
+
+items:
+
+  class-mage:
+    slots: [ 11 ]
+    function: class-mage
+    name: '&b&lМаг'
+    lore:
+      - '{lore}'
+      - ''
+      - '{attribute-lore}'
+
+  class-knight:
+    slots: [ 13 ]
+    function: class-knight
+    name: '&4&lРыцарь'
+    lore:
+      - '{lore}'
+      - ''
+      - '{attribute-lore}'
+
+  class-human:
+    slots: [ 15 ]
+    function: class-human
+    name: '&a&lЧеловек'
+    lore:
+      - '{lore}'
+      - ''
+      - '{attribute-lore}'

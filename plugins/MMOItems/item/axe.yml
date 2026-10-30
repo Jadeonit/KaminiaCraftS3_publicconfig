@@ -1,0 +1,51 @@
+WAR_AXE:
+  base:
+    material: IRON_AXE
+    name: '&8Боевая секира'
+    lore:
+    - '&7Грубое оружие ближнего боя.'
+    - '&7Бей в ближнем бою.'
+    attack-damage: 11.0
+    attack-speed: 1.2
+    weapon-damage: 4.0
+    tier: UNCOMMON
+    upgrade:
+      reference: knight-steel-line
+    crafting:
+      shaped:
+        '1':
+        - IRON_INGOT IRON_INGOT AIR
+        - IRON_INGOT STICK AIR
+        - AIR STICK AIR
+    required-class:
+    - Рыцарь
+EXECUTIONER:
+  base:
+    material: DIAMOND_AXE
+    name: '&4&lПалач'
+    enchants:
+      unbreaking: 2
+    lore:
+    - '&7Добивания лечат владельца.'
+    - '&7Бей в ближнем бою.'
+    attack-damage: 18.0
+    attack-speed: 1.2
+    weapon-damage: 10.0
+    critical-strike-chance: 10.0
+    tier: EPIC
+    upgrade:
+      reference: knight-steel-line
+    ability:
+      ability1:
+        type: LIFE_ENDER
+        mode: ATTACK
+        cooldown: 10.0
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - AIR DIAMOND AIR
+        - AIR AXE.WAR_AXE AIR
+        - AIR STICK AIR
+    required-class:
+    - Рыцарь

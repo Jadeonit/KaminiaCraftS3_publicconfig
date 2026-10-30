@@ -1,0 +1,14 @@
+FROSTCALLER_SNOWBALLS:
+  Skills:
+  - projectile{hit_entity=FROSTCALLER_HIT;hit_block=FROSTCALLER_HIT;tick=FROSTCALLER_TICK;speed=1.2;life_span=40;size=0.35} @Forward
+
+FROSTCALLER_HIT:
+  Skills:
+  - damage{amount=8}
+  - potion{type=SLOWNESS;duration=60;level=250}
+  - effect:particles{particle=SNOWFLAKE;amount=24;hSpread=0.6;vSpread=0.6;speed=0.05}
+  - sound{sound=ENTITY_PLAYER_HURT_FREEZE;pitch=1.4}
+
+FROSTCALLER_TICK:
+  Skills:
+  - effect:particles{particle=SNOWFLAKE;amount=3;hSpread=0.1;vSpread=0.1}

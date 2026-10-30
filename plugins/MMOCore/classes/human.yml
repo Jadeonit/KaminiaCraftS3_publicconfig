@@ -1,0 +1,93 @@
+display:
+  name: Человек
+  lore:
+  - Обычный человек без врождённой магии.
+  - 'Сбалансированные характеристики:'
+  - среднее здоровье, энергия и урон.
+  - ''
+  - Может использовать базовое снаряжение.
+  - ''
+  - '&8&lСНАРЯЖЕНИЕ КЛАССА'
+  - '&7  Оружие: &fкинжалы, луки, молоты'
+  - '&7  Особое: &fтрезубец Прилива, Сейсмический молот и Молот Добрыни'
+  - '&7  Броня: &fлёгкая (следопыт, штормовая)'
+  - ''
+  - '&8&lХАРАКТЕРИСТИКИ (без прокачки)'
+  - '&7  Здоровье: &f20'
+  - '&7  Мана: &f60'
+  - '&7  Реген маны: &f0.3&7/с'
+  - '&7  Скорость: &fсамая высокая'
+  - '&7  Атака: &f+1, высокие криты'
+  - ''
+  - '&7Рост дают &fAuraSkills &7и &fSkillTree&7.'
+  attribute-lore:
+  - '&a+ &7Balanced Stats'
+  - '&a+ &7Movement Speed'
+  - ''
+  - '&8&lВыносливость'
+  - '&7  Max Health: &a20 &7(+&a0.5&7)'
+  - '&7  Max Energy: &a60 &7(+&a3&7)'
+  item: IRON_HELMET:0
+exp-curve: '{level} * 150'
+max-level: 1
+skill-slots:
+  1:
+    name: Skill Slot I
+    unlocked-by-default: true
+    lore: []
+  2:
+    name: Skill Slot II
+    unlocked-by-default: true
+    lore: []
+  3:
+    name: Skill Slot III
+    unlocked-by-default: true
+    lore: []
+skill-trees:
+- general
+- combat
+mana:
+  char: ♦
+  icon: '&a♦'
+  color:
+    full: DARK_GREEN
+    half: GREEN
+    empty: WHITE
+  name: Энергия
+exp-table: class_exp_table
+cast-particle:
+  particle: REDSTONE
+  color:
+    red: 100
+    green: 255
+    blue: 100
+options:
+  off-combat-mana-regen: false
+  needs-permission: false
+skills:
+  LEAP:
+    level: 1
+    max-level: 30
+attributes:
+  mana-regeneration:
+    base: 0.3
+    per-level: 0.01
+  max-mana:
+    base: 60
+    per-level: 3
+  max-health:
+    base: 20
+    per-level: 0.5
+  movement-speed:
+    base: 0.115
+    per-level: 0
+  attack-damage:
+    base: 1
+    per-level: 0.05
+  attack-speed:
+    base: 4.1
+    per-level: 0
+  speed-malus-reduction:
+    base: 20
+    per-level: 1
+main-exp-sources: []

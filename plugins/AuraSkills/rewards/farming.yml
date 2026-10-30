@@ -1,0 +1,22 @@
+﻿# Награды фермерства - линия человека.
+# Куда: plugins/AuraSkills/rewards/farming.yml (замена, сделай бэкап).
+# Дефолтные статы (health/strength) сохранены.
+# +15 - это энергия человека (та же мана MMOCore).
+patterns:
+  - type: stat
+    stat: health
+    value: 0.4
+    pattern:
+      interval: 1
+  - type: stat
+    stat: strength
+    value: 1
+    pattern:
+      interval: 2
+  - type: command
+    executor: console
+    command: 'mmocore admin mana give {player} 15'
+    pattern:
+      start: 3
+      interval: 3
+levels:

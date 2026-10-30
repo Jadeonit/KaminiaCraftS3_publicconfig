@@ -1,0 +1,61 @@
+# =====================================================================
+# ШАБЛОНЫ ПРОКАЧКИ ПРЕДМЕТОВ (кузнечные станции)
+# Куда: plugins/MMOItems/upgrade-templates.yml (ЗАМЕНА, сделай бэкап).
+# Дефолтные шаблоны weapon-default и armor-template-example сохранены
+# один в один. Ниже — особые шаблоны для каждой линейки контента.
+# В предметах подключаются строкой:
+#     upgrade:
+#       reference: <id-шаблона>
+# Проверка в игре: /mmoitems stations list, открой станцию с предметом.
+# =====================================================================
+
+# --- Дефолт MMOItems, не трогать ---
+weapon-default:
+
+    # Every time the item is upgraded, its attack damage
+    # is increased by 3% (relative to the current value)
+    attack-damage: 3%
+
+    # Every time it is upgraded, it gets +2% aboslute
+    # critical strike chance (independant of current val.)
+    critical-strike-chance: 2
+
+    pve-damage: 1%
+
+# --- Дефолт MMOItems, не трогать ---
+armor-template-example:
+    armor: 3%
+    armor-toughness: 2%
+    block-rating: 5%
+    dodge-rating: 5%
+    parry-rating: 5%
+
+# --- Линия Пожирателя Душ: агрессивная прокачка урона ---
+soulreaver-line:
+    attack-damage: 5%
+    critical-strike-chance: 3
+    weapon-damage: 2%
+
+# --- Рыцарская сталь: оружие рыцаря ---
+knight-steel-line:
+    attack-damage: 3%
+    weapon-damage: 3%
+    max-health: 2
+
+# --- Оплот: тяжёлая броня и щиты ---
+bulwark-line:
+    armor: 4%
+    armor-toughness: 2%
+    block-rating: 3%
+
+# --- Арканист: посохи, робы, талисманы мага ---
+arcanist-line:
+    magic-damage: 4%
+    max-mana: 5
+    critical-strike-chance: 1
+
+# --- Следопыт: лёгкое снаряжение человека ---
+ranger-line:
+    attack-damage: 3%
+    critical-strike-chance: 1
+    max-health: 1

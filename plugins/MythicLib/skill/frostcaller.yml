@@ -1,0 +1,4 @@
+FROST_SNOWBALLS:
+  name: Снежные снаряды
+  mythicmobs-skill-id: FROSTCALLER_SNOWBALLS
+  disable-anti-cheat: true

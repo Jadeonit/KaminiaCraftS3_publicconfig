@@ -1,0 +1,109 @@
+display:
+  name: Рыцарь
+  lore:
+  - Тяжёлая броня и сокрушительный ближний бой.
+  - Много здоровья и урона оружием, но почти
+  - 'нет маны: ярость копится только в бою.'
+  - ''
+  - Мечи и латы доступны только рыцарям.
+  - ''
+  - '&8&lСНАРЯЖЕНИЕ КЛАССА'
+  - '&7  Оружие: &fмечи, длинные мечи, секиры'
+  - '&7  Особое: &fщиты, булава Дробитель'
+  - '&7  Броня: &fлаты и тяжёлые доспехи'
+  - ''
+  - '&8&lХАРАКТЕРИСТИКИ (без прокачки)'
+  - '&7  Здоровье: &f30 &8(самый живучий)'
+  - '&7  Мана: &f45'
+  - '&7  Реген маны: &f0.3&7/с'
+  - '&7  Атака: &f+3'
+  - ''
+  - '&7Рост дают &fAuraSkills &7и &fSkillTree&7.'
+  attribute-lore:
+  - '&a+ &7Attack Damage'
+  - '&a+ &7Max Health'
+  - '&a+ &7Weapon Damage'
+  - '&c- &7Max Mana'
+  - '&c- &7Movement Speed'
+  - ''
+  - '&8&lСила'
+  - '&7  Attack Damage: &c3 &7(+&c0.15&7)'
+  - '&7  Max Health: &c30 &7(+&c1&7)'
+  - ''
+  - '&8&lЯрость'
+  - '&7  Max Rage: &c45 &7(+&c2&7)'
+  - '&7  Rage Regeneration: &a+0.3&7/s'
+  item: IRON_SWORD:0
+exp-curve: '{level} * 150'
+max-level: 1
+skill-slots:
+  1:
+    name: Skill Slot I
+    unlocked-by-default: true
+    lore: []
+  2:
+    name: Skill Slot II
+    unlocked-by-default: true
+    lore: []
+  3:
+    name: Skill Slot III
+    unlocked-by-default: true
+    lore: []
+  4:
+    name: Skill Slot IV
+    unlocked-by-default: true
+    lore: []
+skill-trees:
+- general
+- combat
+- warrior-paladin
+mana:
+  char: ♦
+  icon: '&4♦'
+  color:
+    full: DARK_RED
+    half: RED
+    empty: WHITE
+  name: Ярость
+exp-table: class_exp_table
+triggers:
+  weapon-damage:
+  - mana{operation=GIVE;amount=2-4}
+  physical-damage:
+  - mana{operation=GIVE;amount=2-4}
+cast-particle:
+  particle: REDSTONE
+  color:
+    red: 255
+    green: 0
+    blue: 0
+options:
+  off-combat-mana-regen: false
+  needs-permission: false
+skills:
+  DEEP_WOUND:
+    level: 1
+    max-level: 30
+attributes:
+  mana-regeneration:
+    base: 0.3
+    per-level: 0.015
+  speed-malus-reduction:
+    base: 40
+    per-level: 2
+  max-mana:
+    base: 45
+    per-level: 2.0
+  max-health:
+    base: 30
+    per-level: 1.0
+  movement-speed:
+    base: 0.11
+    per-level: 0
+  attack-damage:
+    base: 3
+    per-level: 0.15
+  attack-speed:
+    base: 4.0
+    per-level: 0.05
+main-exp-sources: []

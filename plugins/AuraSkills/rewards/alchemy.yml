@@ -1,0 +1,21 @@
+﻿# Награды алхимии - линия мага.
+# Куда: plugins/AuraSkills/rewards/alchemy.yml (замена, сделай бэкап).
+# Дефолтные статы (wisdom/health) сохранены, добавлена мана MMOCore.
+patterns:
+  - type: stat
+    stat: wisdom
+    value: 1
+    pattern:
+      interval: 1
+  - type: stat
+    stat: health
+    value: 0.4
+    pattern:
+      interval: 2
+  - type: command
+    executor: console
+    command: 'mmocore admin mana give {player} 25'
+    pattern:
+      start: 3
+      interval: 3
+levels:

@@ -1,0 +1,16 @@
+# Doomblade — totem sword settings.
+# blade-id: MMOItems item ID.
+# charges-to-arm: hits required to fill the doom gauge.
+# totem-health-fraction: HP share the player is revived with when the totem triggers.
+# curse-fraction: how much of the maximum HP the curse cuts.
+blade-id: TWO_TIMES_BLADE
+charges-to-arm: 20
+totem-health-fraction: 0.5
+curse-fraction: 0.5
+
+# Doom gauge shown in the item lore.
+# {charges} — current hits, {max} — hits required.
+# lore-marker is the prefix the plugin uses to find and replace its own lore line.
+lore-marker: "Кара"
+lore-line: "&7Кара: &c{charges}&7/&c{max}"
+lore-armed: "&4&lКара полна — клинок спасёт от смерти"

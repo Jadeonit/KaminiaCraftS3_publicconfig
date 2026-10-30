@@ -1,0 +1,13 @@
+# Экран выбора подкласса
+# Куда: plugins/MMOCore/gui/subclass-select.yml (замена файла)
+# У наших классов подклассов нет, поэтому остаётся только кнопка "назад".
+name: 'Выбор подкласса'
+slots: 27
+
+items:
+  back:
+    function: back
+    slots: [ 26 ]
+    item: RED_STAINED_GLASS_PANE
+    name: '&cНазад'
+    lore: [ ]

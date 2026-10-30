@@ -1,0 +1,170 @@
+SWIFT_FANG:
+  base:
+    material: IRON_SWORD
+    name: '&7Быстрый Клык'
+    perm-effects:
+      SPEED: 1
+    lore:
+    - '&7Лёгкий клинок следопыта.'
+    - '&eБей быстро в ближнем бою.'
+    - '&eПКМ — рывок (4 маны).'
+    attack-damage: 4.0
+    attack-speed: 2.2
+    movement-speed: 0.02
+    critical-strike-chance: 10.0
+    tier: COMMON
+    upgrade:
+      reference: ranger-line
+    crafting:
+      shaped:
+        '1':
+        - AIR IRON_INGOT AIR
+        - AIR STICK AIR
+        - AIR FEATHER AIR
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+        damage: 0.0
+        mana: 4.0
+        cooldown: 4.0
+        length: 0.1
+VIPER_FANG:
+  base:
+    material: IRON_SWORD
+    name: '&6&lКлык Гадюки'
+    lore:
+    - '&7Удар добивает и лечит.'
+    - '&eБей быстро в ближнем бою.'
+    - '&eПКМ — рывок (4 маны).'
+    attack-damage: 7.0
+    attack-speed: 2.4
+    movement-speed: 0.02
+    critical-strike-chance: 20.0
+    tier: RARE
+    upgrade:
+      reference: ranger-line
+    ability:
+      ability1:
+        type: LIFE_ENDER
+        mode: ATTACK
+        cooldown: 10.0
+      ability2:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+        damage: 0.0
+        mana: 4.0
+        cooldown: 4.0
+        length: 0.2
+    crafting:
+      shaped:
+        '1':
+        - AIR SPIDER_EYE AIR
+        - AIR DAGGER.SWIFT_FANG AIR
+        - AIR STRING AIR
+EMBER_FANG:
+  base:
+    material: GOLDEN_SWORD
+    name: '&6&lУгольный Клык'
+    lore:
+    - '&7Горячий клинок ночного охотника.'
+    - '&eБей быстро, поджигает.'
+    - '&eПКМ — рывок (4 маны).'
+    attack-damage: 8.0
+    attack-speed: 2.4
+    movement-speed: 0.02
+    critical-strike-chance: 15.0
+    tier: RARE
+    upgrade:
+      reference: ranger-line
+    element:
+      fire:
+        damage: 10.0
+    crafting:
+      shaped:
+        '1':
+        - AIR BLAZE_POWDER AIR
+        - AIR DAGGER.SWIFT_FANG AIR
+        - AIR GOLD_INGOT AIR
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+        damage: 0.0
+        mana: 4.0
+        cooldown: 4.0
+        length: 0.2
+SHADOW_FANG:
+  base:
+    material: DIAMOND_SWORD
+    name: '&4&lТеневой Клык'
+    enchants:
+      unbreaking: 2
+    item-particles:
+      type: DOUBLE_RINGS
+      particle: REDSTONE
+      color:
+        red: 40
+        green: 40
+        blue: 40
+    perm-effects:
+      SPEED: 1
+    lore:
+    - '&7Клинок, которого не видно.'
+    - '&eБей быстро, критуй чаще.'
+    - '&eПКМ — рывок (5 маны).'
+    attack-damage: 9.0
+    attack-speed: 2.6
+    movement-speed: 0.03
+    critical-strike-chance: 20.0
+    critical-strike-power: 20.0
+    tier: EPIC
+    upgrade:
+      reference: ranger-line
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - AIR ENDER_PEARL AIR
+        - AIR DAGGER.VIPER_FANG AIR
+        - AIR ECHO_SHARD AIR
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+        damage: 0.0
+        mana: 5.0
+        cooldown: 3.0
+        length: 0.25
+TWO_TIMES_BLADE:
+  base:
+    material: NETHERITE_SWORD
+    name: '&5&lКлинок Двух Раз'
+    lore:
+    - '&7Каждый удар копит кару.'
+    - '&7Полная шкала спасает от смерти раз,'
+    - '&7но забирает половину здоровья.'
+    - '&eПКМ — рывок (6 маны).'
+    attack-damage: 24.0
+    attack-speed: 1.6
+    weapon-damage: 12.0
+    critical-strike-chance: 12.0
+    tier: MYTHICAL
+    element:
+      wind:
+        damage: 12.0
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+        damage: 0.0
+        mana: 6.0
+        cooldown: 5.0
+        length: 0.35
+    unbreakable: true
+    crafting:
+      shaped:
+        '1':
+        - TOTEM_OF_UNDYING NETHER_STAR TOTEM_OF_UNDYING
+        - AIR SWORD.TRUE_WINDLORD_BLADE AIR
+        - ECHO_SHARD NETHERITE_BLOCK ECHO_SHARD

@@ -1,0 +1,6 @@
+name: Woodcutting
+experience:
+  base: 13
+  per-level: 2.5
+exp-curve: '{level} * 150'
+exp-sources: {}

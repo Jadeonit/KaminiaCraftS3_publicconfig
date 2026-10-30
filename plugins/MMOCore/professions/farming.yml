@@ -1,0 +1,6 @@
+name: Farming
+experience:
+  base: 10
+  per-level: 2
+exp-curve: '{level} * 150'
+exp-sources: {}

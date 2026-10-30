@@ -1,0 +1,92 @@
+name: Mining
+experience:
+  base: 20
+  per-level: 3
+exp-curve: '{level} * 150'
+on-mine:
+  diamond-skull:
+    material: skull{value="eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2EzYmI4NWRlYzEzMjlmZTgyOWNjNmNkY2QzNGUxYmQ2MGVlODMyZjU3MjYyOTY1MWYxNGI1ZTE0NTU1ZGJiMSJ9fX0="}
+    drop-table:
+      items:
+      - vanilla{type=DIAMOND} 1 1-4
+    options:
+      vanilla-drops: false
+    regen:
+      time: 20
+      temp-block: skull{value="eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTU0ODE4MjMzYzgxMTg3M2U4NWY1YTRlYTQ0MjliNzVmMjNiNmFlMGVhNmY1ZmMwZjdiYjQyMGQ3YzQ3MSJ9fX0="}
+    triggers:
+    - exp{profession=mining;amount=20}
+  gold:
+    material: vanilla{type=GOLD_ORE}
+    drop-table:
+      items:
+      - vanilla{type=GOLD_ORE}
+    options:
+      vanilla-drops: false
+    regen:
+      time: 2000
+      temp-block: vanilla{type=STONE}
+    triggers:
+    - exp{profession=mining;amount=5}
+  iron:
+    material: vanilla{type=IRON_ORE}
+    drop-table:
+      items:
+      - vanilla{type=IRON_ORE}
+    options:
+      vanilla-drops: false
+    regen:
+      time: 2000
+      temp-block: vanilla{type=STONE}
+    triggers:
+    - exp{profession=mining;amount=5}
+  lapis:
+    material: vanilla{type=LAPIS_ORE}
+    drop-table:
+      items:
+      - vanilla{type=LAPIS_LAZULI} 1 4-20
+    options:
+      vanilla-drops: false
+    regen:
+      time: 2000
+      temp-block: vanilla{type=STONE}
+    triggers:
+    - exp{profession=mining;amount=13}
+  redstone:
+    material: vanilla{type=REDSTONE_ORE}
+    drop-table:
+      items:
+      - vanilla{type=REDSTONE} 1 4-20
+      - vanilla{type=REDSTONE_TORCH} .1 1-3
+    options:
+      vanilla-drops: false
+    regen:
+      time: 2000
+      temp-block: vanilla{type=STONE}
+    triggers:
+    - exp{profession=mining;amount=10}
+  emerald:
+    material: vanilla{type=EMERALD_ORE}
+    drop-table:
+      items:
+      - vanilla{type=EMERALD} 1 1-9
+    options:
+      vanilla-drops: false
+    regen:
+      time: 2000
+      temp-block: vanilla{type=STONE}
+    triggers:
+    - exp{profession=mining;amount=32}
+  diamond:
+    material: vanilla{type=DIAMOND_ORE}
+    drop-table:
+      items:
+      - vanilla{type=DIAMOND} 1 1-3
+    triggers:
+    - exp{profession=mining;amount=20}
+    options:
+      vanilla-drops: false
+    regen:
+      time: 2000
+      temp-block: vanilla{type=STONE}
+exp-sources: {}

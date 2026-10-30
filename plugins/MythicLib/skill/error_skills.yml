@@ -1,0 +1,162 @@
+AMBERS:
+  name: Mana Ambers
+  lore:
+  - Dealing magic damage has &630% &7chance
+  - of dropping an amber on the ground.
+  - ''
+  - When picked up, ambers refund &9{percent}% &7of your missing mana.
+  - ''
+  - '&e{cooldown}s Cooldown'
+  icon: EMERALD
+  parameters:
+    timer:
+      player: 0
+      name: Timer
+      item: 0
+    delay:
+      player: 0
+      name: Delay
+      item: 0
+    mana:
+      player:
+        base: 2.0
+        per-level: 1.0
+      format: 0.#
+      name: Mana
+      item: 0
+    stamina:
+      player:
+        base: 2.0
+        per-level: 1.0
+      name: Stamina
+      item: 0
+    cooldown:
+      player:
+        base: 3.0
+        per-level: -0.1
+        max: 3.0
+        min: 1.0
+      name: Cooldown
+      item: 0
+    percent:
+      player:
+        base: 10.0
+        per-level: 1.1
+        max: 20.0
+        min: 10.0
+      name: Percent
+      item: 0
+NEPTUNE_GIFT:
+  name: Neptune's Gift
+  lore:
+  - Resource regeneration is increased by &8{extra}% &7when standing in water.
+  icon: LILY_PAD
+  parameters:
+    extra:
+      player:
+        base: 30.0
+        per-level: 5.0
+      format: 0.#
+      name: Extra
+      item: 0
+    timer:
+      name: Timer
+      item: 0
+    delay:
+      name: Delay
+      item: 0
+    mana:
+      name: Mana
+      item: 0
+    stamina:
+      name: Stamina
+      item: 0
+    cooldown:
+      name: Cooldown
+      item: 0
+SNEAKY_PICKY:
+  name: Sneaky Picky
+  lore:
+  - Your attack is empowered by &f{extra}% &7when
+  - delivering the first blow during a fight.
+  - ''
+  - '&9Costs {mana} {mana_name}'
+  icon: DIAMOND_SWORD
+  parameters:
+    mana:
+      player:
+        base: 8.0
+        per-level: 1.0
+      format: 0.#
+      name: Mana
+      item: 0
+    stamina:
+      player:
+        base: 2.0
+        per-level: 1.0
+        max: 0.0
+        min: 0.0
+      name: Stamina
+      item: 0
+    extra:
+      player:
+        base: 50.0
+        per-level: 20.0
+      name: Extra
+      item: 0
+    cooldown:
+      player:
+        base: 2.0
+        per-level: 1.0
+      name: Cooldown
+      item: 0
+    timer:
+      name: Timer
+      item: 0
+    delay:
+      name: Delay
+      item: 0
+name: ''
+lore:
+- This is the default skill description
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+icon: BOOK
+parameters:
+  timer:
+    player:
+      base: 0
+      per-level: 0
+      min: 0
+      max: 0
+  delay:
+    player:
+      base: 0
+      per-level: 0
+      min: 0
+      max: 0
+  mana:
+    player:
+      base: 0
+      per-level: 0
+      min: 0
+      max: 0
+  stamina:
+    player:
+      base: 0
+      per-level: 0
+      min: 0
+      max: 0
+  cooldown:
+    player:
+      base: 0
+      per-level: 0
+      min: 0
+      max: 0
+  percent:
+    player:
+      base: 0
+      per-level: 0
+      min: 0
+      max: 0
